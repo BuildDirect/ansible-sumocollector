@@ -11,7 +11,8 @@
       "forceTimeZone": {{ sumologic_collector_force_timezone | default(sumologic_collector_force_timzone) }},
       "timeZone": "{{ sumologic_collector_timezone }}",
       "category": "{{ source.category }}",
-      "pathExpression": "{{ source.path }}"
+      "pathExpression": "{{ source.path }}",
+      "cutoffTimestamp": "{{ ansible_date_time.epoch }}"
     }
     {% if not loop.last %}
         ,

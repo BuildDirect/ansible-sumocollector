@@ -30,6 +30,3 @@ ephemeral={{ sumologic_collector_ephemeral }}
 {% if sumologic_collector_clobber is defined and sumologic_collector_clobber != "" %}
 clobber={{ sumologic_collector_clobber }}
 {% endif %}
-{% if sumologic_cutoff_time is defined and sumologic_cutoff_time != "" %}
-cutoffRelativeTime={{ sumologic_cutoff_time }}
-{% endif %}
